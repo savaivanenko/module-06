@@ -1,0 +1,92 @@
+header {
+  padding-bottom: 100px;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-top: 22px;
+  position: relative;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #95E1D3;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.menu__list {
+  width: 490px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+}
+
+.menu__item {
+  margin-left: 50px;
+}
+
+.menu__list a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #f38181;
+  margin-top: 12px;
+  visibility: hidden;
+}
+
+.menu__list a:hover {
+  color: #f38181;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+}
+
+.menu__list a:hover::after {
+  visibility: visible;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+}
+
+.services h2 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 42px;
+}
+
+.italic {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  text-transform: none;
+}
+/*# sourceMappingURL=style.css.map */
