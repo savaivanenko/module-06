@@ -190,7 +190,7 @@ h2::after{
     height: 56px;    
     img{
       background-color: rgb(252, 227, 138);
-      transition: 0.2s linear; 
+      // transition: 1s linear; 
     }
   }
 }
@@ -202,6 +202,11 @@ h2::after{
     }
   }
 }
+.foto__team{
+  transform: translate(0px,0px);
+  transition: 0.2s linear;
+}
+
 .wrap__for__teamcard:hover{
   .overlay__card{
     visibility: visible;

@@ -175,11 +175,14 @@ h2::after {
     width: 56px;
     height: 56px; }
     .overlay__icon_item a img {
-      background-color: #fce38a;
-      transition: 0.2s linear; }
+      background-color: #fce38a; }
 
 .overlay__icon_item:hover a img {
   background-color: #95E1D3;
+  transition: 0.2s linear; }
+
+.foto__team {
+  transform: translate(0px, 0px);
   transition: 0.2s linear; }
 
 .wrap__for__teamcard:hover .overlay__card {
