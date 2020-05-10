@@ -25,12 +25,10 @@ header {
   text-decoration: none;
   color: #95E1D3;
   font-family: "Montserrat", sans-serif;
+  padding-bottom: 12px;
 }
 
 .logo {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   font-weight: 700;
   font-size: 30px;
 }
@@ -56,22 +54,32 @@ header {
   height: 3px;
   background-color: #f38181;
   margin-top: 12px;
+  opacity: 0;
   visibility: hidden;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.menu__list a {
+  text-transform: uppercase;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .menu__list a:hover {
   color: #f38181;
-  -webkit-transition: all 0.8s linear;
-  transition: all 0.8s linear;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .menu__list a:hover::after {
   visibility: visible;
-  -webkit-transition: all 0.8s linear;
-  transition: all 0.8s linear;
+  opacity: 1;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
-.services h2 {
+.head__section {
   font-family: "Montserrat", sans-serif;
   margin: 0 auto;
   width: -webkit-max-content;
@@ -88,5 +96,254 @@ header {
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
   text-transform: none;
+  display: block;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #f38181;
+  margin: 34px auto 52px;
+}
+
+.servis__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.icon-1 {
+  background-image: url(../images/sarvices/1fotograph.png);
+}
+
+.icon-2 {
+  background-image: url(../images/sarvices/2design.png);
+}
+
+.icon-3 {
+  background-image: url(../images/sarvices/3comp.png);
+}
+
+.icon-4 {
+  background-image: url(../images/sarvices/4ceo.png);
+}
+
+.icon-5 {
+  background-image: url(../images/sarvices/5dom.png);
+}
+
+.icon-6 {
+  background-image: url(../images/sarvices/6digital.png);
+}
+
+.servis__card:hover {
+  -transition: background-size 0.2s ease-in;
+  background-size: 12% auto;
+}
+
+.servis__card {
+  width: 382px;
+  padding-left: 80px;
+  margin-bottom: 98px;
+  background-size: 10%;
+  -webkit-transition: background-size 0.2s ease-in;
+  transition: background-size 0.2s ease-in;
+  background-repeat: no-repeat;
+  background-position: left 20px top;
+}
+
+.servis__card h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.servis__card p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #999999;
+}
+
+.team {
+  padding-bottom: 80px;
+  border-bottom: 2px solid #E5E5E5;
+}
+
+.team h2 + p {
+  font-family: "Montserrat", sans-serif;
+  color: #999999;
+  width: 78%;
+  margin: 0 auto 72px;
+  text-align: center;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team__list__item h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #333333;
+  padding-bottom: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.team__list__item h4 + p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.wrap__for__teamcard {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.overlay__card {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
+  background: linear-gradient(90deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  visibility: hidden;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.overlay__list__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay__icon_item {
+  padding: 1px;
+}
+
+.overlay__icon_item a {
+  width: 56px;
+  height: 56px;
+}
+
+.overlay__icon_item a img {
+  background-color: #fce38a;
+}
+
+.overlay__icon_item:hover a img {
+  background-color: #95E1D3;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  opacity: 1;
+}
+
+.foto__team {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.wrap__for__teamcard:hover .overlay__card {
+  visibility: visible;
+  -webkit-box-shadow: 10px 10px 0 0 #95e1d3;
+          box-shadow: 10px 10px 0 0 #95e1d3;
+  -webkit-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.wrap__for__teamcard:hover .foto__team {
+  -webkit-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.foot a {
+  text-decoration: none;
+  color: #f38181;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form input {
+  width: 230px;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 300;
+  outline: none;
+  padding-left: 15px;
+  margin-right: 10px;
+}
+
+.form button {
+  border: none;
+  background: #95e1d3;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 150px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

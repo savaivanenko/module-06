@@ -19,13 +19,12 @@ header{
     text-decoration: none;
     color: #95E1D3;
     font-family: $font-base;  
+    padding-bottom: 12px;
   }
 }
 .logo{
-  justify-content: space-between;
   font-weight: 700;
-  font-size: 30px;
-  
+  font-size: 30px;  
 }
 .menu__list{
   width: 490px;
@@ -42,11 +41,14 @@ header{
   height: 3px;
   background-color: rgb(243, 129, 129);
   margin-top: 12px;
+  opacity:0;
   visibility: hidden;  
   transition: 0.2s linear;
 }
 .menu__list a{
+  text-transform: uppercase;
   transition: 0.2s linear;
+
 }
 .menu__list a:hover{
   color: rgb(243, 129, 129);
@@ -54,6 +56,7 @@ header{
 }
 .menu__list a:hover::after{
   visibility: visible;
+  opacity:1;
   transition: 0.2s linear;
 }  
 .head__section{
@@ -72,14 +75,13 @@ header{
   text-transform: none;
   display: block;
 }
-
 h2::after{
   content: "";
   display: block;
   width: 60px;
   height: 3px;
   background:rgb(243, 129, 129);
-  margin: 28px auto 66px;
+  margin: 34px auto 52px;
 }
 .servis__list{
   display: flex;
@@ -111,15 +113,15 @@ h2::after{
 .servis__card{
   width: 382px;
   padding-left: 80px;
-  margin-bottom: 104px;
+  margin-bottom: 98px;
   background-size: 10%;
-  transition: background-size 0.2s ease-in;
-  
+  transition: background-size 0.2s ease-in;  
   background-repeat: no-repeat;
   background-position: left 20px top;
   h3{
     font-family: $font-base;
     font-size: 14px;
+    font-weight: normal;
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #333333;
@@ -131,12 +133,14 @@ h2::after{
   }
 }
 .team{
-  padding-bottom: 84px;
+  padding-bottom: 80px;
   border-bottom: 2px solid #E5E5E5;
   h2+p{
     font-family: $font-base;
     color: $color-base;
-    margin-bottom: 94px;
+    width: 78%;
+    margin: 0 auto 72px;
+    text-align: center;
   }
 }
 .team__list{
@@ -147,8 +151,9 @@ h2::after{
   h4{
    font-family: $font-base;
    font-size: 14px;
+   font-weight: normal;
    color: #333333; 
-   padding-bottom: 16px;
+   padding-bottom: 10px;
    width: max-content;
    margin: 0 auto;
    text-transform: uppercase;
@@ -163,15 +168,14 @@ h2::after{
 }
 .wrap__for__teamcard{
   position: relative;
-  margin-bottom: 33px;
+  margin-bottom: 28px;
 }
 .overlay__card{
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-  opacity: .9;
+  background: linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);
   visibility: hidden;
   transform: translate(0px,0px);
   transition: 0.2s linear;
@@ -190,7 +194,6 @@ h2::after{
     height: 56px;    
     img{
       background-color: rgb(252, 227, 138);
-      // transition: 1s linear; 
     }
   }
 }
@@ -199,6 +202,7 @@ h2::after{
     img{
       background-color: #95E1D3;
       transition: 0.2s linear; 
+      opacity: 1;
     }
   }
 }
@@ -206,7 +210,6 @@ h2::after{
   transform: translate(0px,0px);
   transition: 0.2s linear;
 }
-
 .wrap__for__teamcard:hover{
   .overlay__card{
     visibility: visible;
@@ -221,7 +224,7 @@ h2::after{
 }
 .foot{
   display: flex;
-  padding: 50px 0;
+  padding: 10px 0;
   justify-content: space-between;
   align-items: center;
   font-family: $font-base;
@@ -231,11 +234,8 @@ h2::after{
   text-decoration: none;
   color: #f38181;
 }
-
 .form{
   display: flex;
-
-
   input{
     width: 230px;
     height: 40px;
@@ -244,9 +244,8 @@ h2::after{
     font-size: 15px;
     font-weight: 300;
     outline: none;
-  }
-  input::placeholder{
-    padding-left: 20px;
+    padding-left: 15px;
+    margin-right: 10px;
   }
   button{
     border: none;
@@ -256,6 +255,7 @@ h2::after{
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
-    width: 160px;
+    width: 150px;
+    cursor: pointer;
   }
 } 

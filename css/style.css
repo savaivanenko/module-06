@@ -14,10 +14,10 @@ header {
   .nav a {
     text-decoration: none;
     color: #95E1D3;
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 12px; }
 
 .logo {
-  justify-content: space-between;
   font-weight: 700;
   font-size: 30px; }
 
@@ -36,10 +36,12 @@ header {
   height: 3px;
   background-color: #f38181;
   margin-top: 12px;
+  opacity: 0;
   visibility: hidden;
   transition: 0.2s linear; }
 
 .menu__list a {
+  text-transform: uppercase;
   transition: 0.2s linear; }
 
 .menu__list a:hover {
@@ -48,6 +50,7 @@ header {
 
 .menu__list a:hover::after {
   visibility: visible;
+  opacity: 1;
   transition: 0.2s linear; }
 
 .head__section {
@@ -72,7 +75,7 @@ h2::after {
   width: 60px;
   height: 3px;
   background: #f38181;
-  margin: 28px auto 66px; }
+  margin: 34px auto 52px; }
 
 .servis__list {
   display: flex;
@@ -104,7 +107,7 @@ h2::after {
 .servis__card {
   width: 382px;
   padding-left: 80px;
-  margin-bottom: 104px;
+  margin-bottom: 98px;
   background-size: 10%;
   transition: background-size 0.2s ease-in;
   background-repeat: no-repeat;
@@ -112,6 +115,7 @@ h2::after {
   .servis__card h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
+    font-weight: normal;
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #333333; }
@@ -121,12 +125,14 @@ h2::after {
     color: #999999; }
 
 .team {
-  padding-bottom: 84px;
+  padding-bottom: 80px;
   border-bottom: 2px solid #E5E5E5; }
   .team h2 + p {
     font-family: "Montserrat", sans-serif;
     color: #999999;
-    margin-bottom: 94px; }
+    width: 78%;
+    margin: 0 auto 72px;
+    text-align: center; }
 
 .team__list {
   display: flex;
@@ -135,8 +141,9 @@ h2::after {
 .team__list__item h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  font-weight: normal;
   color: #333333;
-  padding-bottom: 16px;
+  padding-bottom: 10px;
   width: max-content;
   margin: 0 auto;
   text-transform: uppercase; }
@@ -149,15 +156,14 @@ h2::after {
 
 .wrap__for__teamcard {
   position: relative;
-  margin-bottom: 33px; }
+  margin-bottom: 28px; }
 
 .overlay__card {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #fce38a 0%, #f38181 100%);
-  opacity: .9;
+  background: linear-gradient(90deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
   visibility: hidden;
   transform: translate(0px, 0px);
   transition: 0.2s linear; }
@@ -179,7 +185,8 @@ h2::after {
 
 .overlay__icon_item:hover a img {
   background-color: #95E1D3;
-  transition: 0.2s linear; }
+  transition: 0.2s linear;
+  opacity: 1; }
 
 .foto__team {
   transform: translate(0px, 0px);
@@ -196,7 +203,7 @@ h2::after {
 
 .foot {
   display: flex;
-  padding: 50px 0;
+  padding: 10px 0;
   justify-content: space-between;
   align-items: center;
   font-family: "Montserrat", sans-serif;
@@ -215,9 +222,9 @@ h2::after {
     font-style: italic;
     font-size: 15px;
     font-weight: 300;
-    outline: none; }
-  .form input::placeholder {
-    padding-left: 20px; }
+    outline: none;
+    padding-left: 15px;
+    margin-right: 10px; }
   .form button {
     border: none;
     background: #95e1d3;
@@ -226,6 +233,7 @@ h2::after {
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
-    width: 160px; }
+    width: 150px;
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
